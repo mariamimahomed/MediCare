@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  {% extends "layout.html" %}
+  {% block head %}
+  {{ super() }}
+  <title>All Jinja Posts</title>
+  <!-- Favicon no longer needed -->
+  <!-- <link rel="shortcut icon" type="image/jpg" href="static\images\favicon.ico"/> -->
+  {% endblock %}
+
+</head>
+
+<body>
+  <!-- Main Content -->
+  {% block myContent %}
+  <div class="container">
+    <br><br><br><br><br><br>
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+
+        <center>
+          <h1> Jinja Posts</h1>
+          <p>Brings all posts data using Jinja code. Data is retrieved from postdata.py</p>
+        </center>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- display output by bootstrap -->
+  {% for p in posts %}
+  <div class="container mt-3">
+    <ul class="list-group">
+      <li class="list-group-item active">{{p['student']}}</li>
+      <li class="list-group-item">{{p['student ID']}}</li>
+      <li class="list-group-item">{{p['major']}}</li>
+      <li class="list-group-item">{{p['credit hours completed']}}</li>
+
+    </ul>
+  </div>
+  <br><br>
+
+  {% endfor %}
+
+  {% endblock myContent%}
+
+</body>

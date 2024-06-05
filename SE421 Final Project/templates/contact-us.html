@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {% extends "layout.html" %}
+    {% block head %}
+    <title>Contact Us</title>
+    {{ super() }}
+
+    <style>
+        /* Add custom CSS here */
+        textarea {
+            width: 400px;
+            /* Adjust the width as needed */
+            height: 200px;
+            /* Adjust the height as needed */
+            background-color: hsla(238, 91%, 23%, 0.602);
+            border-radius: 10px;
+        }
+
+        input {
+            width: 400px;
+            /* Adjust the width as needed */
+            height: 50px;
+            /* Adjust the height as needed */
+            background-color: hsla(238, 91%, 23%, 0.602);
+            border-radius: 10px;
+        }
+    </style>
+
+    {% endblock %}
+</head>
+
+<div id="main">
+    <main>
+        {% block myContent %}
+        <br><br><br><br><br><br><br>
+        <center>
+            <form method="POST">
+                <label>
+                    <h1>Your email: </h1>
+                    <input type="email" name="email" id="email">
+                </label><br><br>
+                <label>
+                    <h1>Your message: </h1>
+                    <textarea name="message" id="message"></textarea>
+                </label><br>
+
+                <button id="feedbackButton" class="btn has-before title-md"> Contact Us </button>
+            </form>
+        </center>
+        <br><br><br>
+    </main>
+    {% endblock myContent %}
+
+
+</div>
+
+</html>

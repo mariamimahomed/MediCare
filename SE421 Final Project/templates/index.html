@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {% extends "layout.html" %}
+    {% block head %}
+    <title>Home</title>
+    {{ super() }}
+    {% endblock %}
+</head>
+
+<body id="top">
+    {% block myContent %}
+
+    ABC
+    <main>
+        <!-- #HERO -->
+        <section class="section hero" style="background-image: url('./images/hero-bg.jpg')" aria-label="home">
+            <div class="container">
+                <div class="hero-content">
+                    <p class="hero-subtitle has-before" data-reveal="left" style="font-size: 2.5rem;">
+                        Welcome To MediCare
+                    </p>
+                    <h1 class="headline-lg hero-title" data-reveal="left">
+                        Find Your Healthcare <br /> Specialist
+                    </h1>
+                </div>
+                <figure class="hero-banner" data-reveal="right">
+                    <img src="../static/images/hero-banner.png" width="590" height="517" loading="eager"
+                        alt="hero banner" class="w-100" />
+                </figure>
+            </div>
+        </section>
+
+        <!-- #SERVICE-->
+
+        <section class="service" aria-label="service">
+            <div class="container">
+                <ul class="service-list flex_scroll">
+                    <li>
+                        <div class="service-card" data-reveal="bottom">
+                            <div class="card-icon">
+                                <img src="../static/images/Emergency services.png" width="80" height="80" loading="lazy"
+                                    alt="icon" />
+                            </div>
+                            <h3 class="headline-sm card-title"><a href="#">Emergency Services</a></h3>
+                            <p class="card-text"> Immediate care for acute illnesses and injuries, available 24/7.
+                            </p>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="service-card" data-reveal="bottom">
+                            <div class="card-icon">
+                                <img src="../static/images/Cardiology.png" width="71" height="71" loading="lazy"
+                                    alt="icon" />
+                            </div>
+                            <h3 class="headline-sm card-title"><a href="#">Cardiology</a></h3>
+                            <p class="card-text"> Expert heart care from prevention to complex surgeries.</p>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="service-card" data-reveal="bottom">
+                            <div class="card-icon">
+                                <img src="../static/images/Neurology.png" width="60" height="60" loading="lazy"
+                                    alt="icon" />
+                            </div>
+                            <h3 class="headline-sm card-title"><a href="#">Neurology</a></h3>
+                            <p class="card-text">Advanced treatment for neurological and brain conditions.</p>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="service-card" data-reveal="bottom">
+                            <div class="card-icon">
+                                <img src="../static/images/Orthopedics.png" width="71" height="71" loading="lazy"
+                                    alt="icon" />
+                            </div>
+                            <h3 class="headline-sm card-title"><a href="#">Orthopedics</a></h3>
+                            <p class="card-text">Comprehensive bone, joint, and muscle care, including surgery.</p>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="service-card" data-reveal="bottom">
+                            <div class="card-icon">
+                                <img src="../static/images/Pediatrics.png" width="71" height="71" loading="lazy"
+                                    alt="icon" />
+                            </div>
+                            <h3 class="headline-sm card-title"><a href="#">Pediatrics</a> </h3>
+                            <p class="card-text"> Personalized care for children with a range of pediatric services.
+                            </p>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="service-card" data-reveal="bottom">
+                            <div class="card-icon">
+                                <img src="../static/images/Oncology.png" width="71" height="71" loading="lazy"
+                                    alt="icon" />
+                            </div>
+                            <h3 class="headline-sm card-title"><a href="#">Oncology</a></h3>
+                            <p class="card-text">Cancer care with cutting-edge treatment and compassionate support.
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="service-card" data-reveal="bottom">
+                            <div class="card-icon">
+                                <img src="../static/images/General surgery.png" width="71" height="71" loading="lazy"
+                                    alt="icon" />
+                            </div>
+                            <h3 class="headline-sm card-title"><a href="#">General Surgery</a></h3>
+                            <p class="card-text">Skilled surgical care for a variety of health concerns.</p>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="service-card" data-reveal="bottom">
+                            <div class="card-icon">
+                                <img src="../static/images/Maternity.png" width="65" height="65" loading="lazy"
+                                    alt="icon" />
+                            </div>
+                            <h3 class="headline-sm card-title"><a href="#">Maternity</a> </h3>
+                            <p class="card-text">Full spectrum of women’s health from maternity to wellness.</p>
+                </ul>
+            </div>
+        </section>
+
+        <!-- #ABOUT-->
+
+        <section class="section about" aria-labelledby="about-label">
+            <div class="container">
+                <div class="about-content">
+                    <p class="section-subtitle title-lg has-after" id="about-label" data-reveal="left"> About Us</p>
+
+                    <h2 class="headline-md" data-reveal="left"> Experienced Medical Professionals </h2>
+
+                    <p class="section-text" data-reveal="left">
+                        Our dedicated team of healthcare professionals is committed to delivering exceptional
+                        patient care across all medical specialties. Their broad expertise ensures comprehensive
+                        treatment for all health concerns.
+                    </p>
+
+                    <ul class="tab-list" data-reveal="left">
+                        <li><button class="tab-btn active"> Vision </button> </li>
+                        <li><button class="tab-btn">Mission</button></li>
+                        <li><button class="tab-btn">Strategy</button></li>
+                    </ul>
+
+                    <p class="tab-text" data-reveal="left">
+                        There are many benefits to maintaining good
+                        health. Here are some of the key benefits
+                        of health care:
+                    </p>
+
+                    <div class="wrapper">
+                        <ul class="about-list">
+                            <li class="about-item" data-reveal="left">
+                                <ion-icon name="checkmark-circle-outline"></ion-icon>
+                                <span class="span">Disease prevention</span>
+                            </li>
+
+                            <li class="about-item" data-reveal="left">
+                                <ion-icon name="checkmark-circle-outline"></ion-icon>
+                                <span class="span">Rapid recovery</span>
+                            </li>
+
+                            <li class="about-item" data-reveal="left">
+                                <ion-icon name="checkmark-circle-outline"></ion-icon>
+                                <span class="span">Wellness promotion</span>
+                            </li>
+
+                            <li class="about-item" data-reveal="left">
+                                <ion-icon name="checkmark-circle-outline"></ion-icon>
+                                <span class="span">Varied treatments</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <figure class="about-banner" data-reveal="right">
+                    <img src="../static/images/about-banner.png" loading="lazy" alt="about banner" class="w-100" />
+                </figure>
+            </div>
+        </section>
+
+        <section class="booking" aria-label="booking">
+
+        </section>
+
+    </main>
+    {% endblock myContent %}
+
+
+    <!-- custom js link-->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="/static/scripts/index.js"></script>
+
+</body>
+
+</html>

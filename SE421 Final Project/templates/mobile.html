@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {% extends "layout.html" %}
+    {% block head %}
+    <title>Mobile Data</title>
+    {{ super() }}
+    {% endblock %}
+</head>
+
+<div id="main">
+    <main>
+        {% block myContent %}
+        <section>
+            <div class="container">
+                <br><br><br><br><br><br>
+                <center>
+                    <h1>Mobiles Page</h1>
+                    <p>this page contains all mobile's data from <code>mobile-data.js</code> </p>
+                </center><br>
+
+                <center>
+                    <table style="margin: 0 auto; border-collapse: collapse; width: 50%,;">
+                        <tr>
+                            <th>Name</th>
+                            <th>Department</th>
+                            <th>Hospital</th>
+                        </tr>
+                        <tbody id="Mobile"></tbody>
+                    </table>
+                </center>
+                <br>
+            </div>
+        </section>
+    </main>
+
+    <script src="/static/scripts/mobile-data.js"></script>
+
+    <script>
+
+        var Mobile = document.getElementById('Mobile');
+        for (var i = 0; i < Object.keys(mobiles).length; i++) {
+            var tr = `<tr>
+                                <td>${mobiles[i].title}</td>
+                                <td>${mobiles[i].desc}</td>
+                                <td>${mobiles[i].price}</td>
+                          </tr>`
+            Mobile.innerHTML += tr;
+            console.log(Mobile)
+        }
+    </script>
+    {% endblock myContent %}
+
+</div>
+
+</html>
